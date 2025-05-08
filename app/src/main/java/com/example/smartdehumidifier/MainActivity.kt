@@ -44,27 +44,6 @@ fun IoTDashboard() {
 
     // Read data from Firebase in real-time
     LaunchedEffect(Unit) {
-        humidityRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                humidity = snapshot.getValue(Int::class.java) ?: 0
-            }
-            override fun onCancelled(error: DatabaseError) {}
-        })
-
-        temperatureRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                temperature = snapshot.getValue(Int::class.java) ?: 0
-            }
-            override fun onCancelled(error: DatabaseError) {}
-        })
-
-        waterLevelRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                waterLevel = snapshot.getValue(Int::class.java) ?: 0
-                
-            }
-            override fun onCancelled(error: DatabaseError) {}
-        })
 
         modeRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -72,6 +51,31 @@ fun IoTDashboard() {
             }
             override fun onCancelled(error: DatabaseError) {}
         })
+
+            humidityRef.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    humidity = snapshot.getValue(Int::class.java) ?: 0
+                }
+
+                override fun onCancelled(error: DatabaseError) {}
+            })
+
+            temperatureRef.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    temperature = snapshot.getValue(Int::class.java) ?: 0
+                }
+
+                override fun onCancelled(error: DatabaseError) {}
+            })
+
+            waterLevelRef.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    waterLevel = snapshot.getValue(Int::class.java) ?: 0
+
+                }
+
+                override fun onCancelled(error: DatabaseError) {}
+            })
 
     }
 
@@ -101,7 +105,7 @@ fun IoTDashboard() {
                     style = Stroke(width = 80f, cap = StrokeCap.Round) // **Cap.Round untuk ujung melengkung**
                 )
             }
-            Text("$humidity%", fontSize = 38.sp, fontWeight = FontWeight.Bold, color = Color.White)
+            Text(text = "$humidity%", fontSize = 38.sp, fontWeight = FontWeight.Bold, color = Color.White)
         }
         Spacer(modifier = Modifier.height(60.dp))
 
