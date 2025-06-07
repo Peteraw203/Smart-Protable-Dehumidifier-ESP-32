@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBH9Zqf_u2o_sxSGSUe_SlfU-EY2y2XlDI"
+          "current_key": "//Use your own google-services.json to connect your firebase to your app"
         }
       ],
       "services": {
