@@ -63,7 +63,7 @@ A smart and portable dehumidifier powered by **ESP32**, **Firebase**, and **WiFi
 
 | Component              | Description                          |
 |------------------------|--------------------------------------|
-| ESP32 Dev Board        | Main microcontroller with WiFi+BLE   |
+| ESP32 Dev Board        | Main microcontroller  |
 | Peltier Module Tes-1 7102 | Cooling system for dehumidification  |
 |Heatsink | Cooling support for the hot side of the peltier module |
 | 2 x Fan (5V)               | Supports airflow                     |
