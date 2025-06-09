@@ -5,6 +5,7 @@ by:
 #####  Peter Abednego Wijaya - 235150300111013
 ##### Gilang Shido Faizalhaq - 235150300111011
 #####  Adi Baskara Husodo - 235150300111050
+##### Joab Suliyan Purba - 225150307111061
 ---
 
 A smart and portable dehumidifier powered by **ESP32**, **Firebase**, and **WiFi** for real-time monitoring and control via mobile.
