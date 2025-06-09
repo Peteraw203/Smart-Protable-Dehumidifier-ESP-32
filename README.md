@@ -43,7 +43,7 @@ A smart and portable dehumidifier powered by **ESP32**, **Firebase**, and **WiFi
 | Feature                        | Smart TAC Dehumidifier                       | Conventional Solutions       |
 |--------------------------------|---------------------------------------------|-------------------------------|
 | Real-time humidity monitoring  | ✅ Yes (via Firebase + App)                 | ❌ No                          |
-| Remote control                 | ✅ Yes (Bluetooth & Internet)               | ❌ No                          |
+| Remote control                 | ✅ Yes (WiFi)               | ❌ No                          |
 | Compact & customizable         | ✅ Yes (ESP32 + small components)           | ❌ Mostly bulky or don't have remote control   |
 | Remote display                 | ✅ Yes (App)                                | ❌ Limited or none             |
 | Power efficiency 12 Watt Max (Customable)             | ✅ Optimized via software + relay control   | ❌ Often inefficient    |
