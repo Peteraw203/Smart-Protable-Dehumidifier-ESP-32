@@ -80,7 +80,7 @@ This is the circuit
 ---
 
 ###  Sequence Diagram
-![Sequence Diagram of Smart Dehumidifier](Asset/sequence_diagram.png)
+![Sequence Diagram of Smart Dehumidifier](Asset/Sequence_diagram.png)
 
 ###  Development Steps
 
