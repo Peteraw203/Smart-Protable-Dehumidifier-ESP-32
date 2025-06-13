@@ -72,6 +72,19 @@ A smart and portable dehumidifier powered by **ESP32**, **Firebase**, and **WiFi
 | Android Studio            | Firebase-connected mobile interface  |
 | 5V 3A Adapter          | Power source                         |
 
+### 🔋 Maximum Power Consumption of Smart Dehumidifier
+
+| Component             | Voltage | Current   | Power     |
+|------------------------|---------|-----------|-----------|
+| ESP32 (Wi-Fi ON)       | 5V      | 240mA     | 1.2W      |
+| DHT22                  | 5V      | 2.5mA     | 12.5mW    |
+| Water Level Sensor     | 5V      | 19mA      | 115 mW      |
+| DC Fan 5V x 2             | 5V      | 310mA     | 0.55W     |
+| Peltier test1 7102 | 5V      | 2A      | 10W      |
+| Relay              | 5V      | 72mA    | 0.36W    |
+| **Total Power**    |         |         | **12.2195W** |
+---
+
 ### ⚡Circuit diagram
 This is the circuit 
 - ![Circuit Diagram of Smart Dehumidifier](Asset/circuit_image.png)
@@ -81,6 +94,21 @@ This is the circuit
 
 ###  Sequence Diagram
 ![Sequence Diagram of Smart Dehumidifier](Asset/Sequence_diagram.png)
+
+The device is powered on using a physical switch. Upon activation, it automatically enters the default mode, which turns on the Dehumidify function.
+
+At the same time, the device starts receiving temperature and humidity data from the sensor, which is displayed on the connected mobile application.
+
+Users can:
+
+📆 Schedule automatic on/off times for the device via the mobile app.
+
+🔄 Switch between modes: from default to Auto Mode.
+
+🛑 Manually stop the device and set it to Idle Mode using the app.
+
+🔁 Auto Mode Logic
+In Auto Mode, the device evaluates the current temperature and humidity data to determine whether it needs to turn on or off. This ensures smart and energy-efficient operation based on real-time environmental conditions.
 
 ###  Development Steps
 
@@ -133,5 +161,5 @@ _ Make a project on Android Studio
 ## Result 
 ![Completed Smart Dehumidifier](Asset/Smart_Dehumidifier.png)
 ![Smart Dehumidifier app](Asset/Mobile_app.png)
-
+![Smart Dehumidifier_demo](Asset/Video1.mp4)
 
