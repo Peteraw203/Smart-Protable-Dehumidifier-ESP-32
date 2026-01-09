@@ -165,4 +165,3 @@ _ Make a project on Android Studio
 ![Smart Dehumidifier_demo](Asset/Video1.mp4).
 
 https://drive.google.com/file/d/1KKEBp8HDGhKkE9zpAi3sXMjfS6MIxNA9/view?usp=sharing 
-
